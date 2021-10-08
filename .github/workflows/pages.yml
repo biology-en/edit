@@ -13,5 +13,4 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '11'
-      - name: Check that the input HTML is valid
       - run: java -cp java HelloWorldApp
