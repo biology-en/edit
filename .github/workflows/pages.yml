@@ -9,5 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '11'
       - name: Check that the input HTML is valid
-        run: echo Validating HTML ...
+      - run: java -cp java HelloWorldApp
