@@ -19,4 +19,7 @@ jobs:
       - run: mkdir bin
       - run: cd bin
       - run: wget https://ebookipedia.github.io/java/HelloWorldApp.class
-      - run: java -cp . HelloWorldApp.class
+      - run: pwd
+      - run: ls
+      - run: java -help
+      - run: java HelloWorldApp
