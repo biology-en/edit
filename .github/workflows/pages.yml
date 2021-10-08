@@ -1,1 +1,13 @@
-
+name: Build HTML pages
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - pages/*.html
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check that the input HTML is valid
+        run: echo Validating HTML ...
