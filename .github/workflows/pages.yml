@@ -14,4 +14,4 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '8'
       - run: wget https://ebookipedia.github.io/java/HelloWorldApp.class
-      - run: java -cp /home/runner/work/edit/edit HelloWorldApp
+      - run: java -cp /home/runner/work/edit/edit HelloWorldApp.class
