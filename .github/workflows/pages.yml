@@ -13,5 +13,5 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '11'
-      - run: java -v
+      - run: java -version
       #- run: java -cp java HelloWorldApp
