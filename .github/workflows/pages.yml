@@ -14,7 +14,9 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '8'
       - run: java -version
-      - run: cd java
+      - run: pwd
       - run: ls
-      - run: wget ebookipedia.github.io/java/HelloWorldApp.class
-      - run: java -cp java HelloWorldApp
+      - run: mkdir bin
+      - run: cd bin
+      - run: wget https://ebookipedia.github.io/java/HelloWorldApp.class
+      - run: java -cp bin HelloWorldApp
