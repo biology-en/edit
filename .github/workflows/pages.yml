@@ -1,4 +1,4 @@
-name: Build HTML pages
+name: Build new and modified HTML pages
 on:
   push:
     branches: [ main ]
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v2
         with:
-          distribution: 'temurin' # See 'Supported distributions' for available options
+          distribution: 'temurin'
           java-version: '8'
-      - run: wget https://ebookipedia.github.io/java/HelloWorldApp.class
-      - run: java -cp /home/runner/work/edit/edit HelloWorldApp.class
+      - run: wget https://ebookipedia.github.io/java/BuildPage.jar
+      - run: java -jar BuildPage.jar
